@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>inputs</title>
+  </head>
+  <body>
+    <form action="result" method="post">
+      {% csrf_token %} Enter 1st Number:
+      <input type="text" name="num1" /><br />
+      Enter 2nd Number:
+      <input type="text" name="num2" /><br />
+      Choose a Operation:
+      <select name="operation">
+        <option value="add">ADD</option>
+        <option value="sub">SUBTRACT</option>
+        <option value="mul">MULTIPLY</option>
+        <option value="divide">DIVIDE</option>
+      </select>
+      <input type="submit" /><br />
+    </form>
+  </body>
+</html>
